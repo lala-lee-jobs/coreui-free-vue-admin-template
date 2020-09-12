@@ -9,6 +9,11 @@ export default {
   },
 };
 
+export const TestButton = () => ({
+  components: { MyButton },
+  template: `<my-button :label="'Test Button'" />`,
+});
+
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MyButton },
